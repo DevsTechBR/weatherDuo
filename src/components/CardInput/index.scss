@@ -1,0 +1,16 @@
+@import '../../sass/mixing';
+@import '../../sass/variables';
+
+
+div.content {
+    width: 100%;
+    background: salmon;
+    height: 50vh;
+    padding: 2rem;
+    @include flexCenter(row, center, center);
+    div.contentContainer {
+        background: white;
+        width: 40%;
+        height: 40vh;
+    }
+}

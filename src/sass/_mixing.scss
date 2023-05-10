@@ -1,7 +1,7 @@
 
-@mixin flexCenter ($direction) {
+@mixin flexCenter ($flex-direction, $jc-direction, $ai-direction) {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: $direction;
+    align-items: $ai-direction;
+    justify-content: $jc-direction;
+    flex-direction: $flex-direction;
 }

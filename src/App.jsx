@@ -7,7 +7,7 @@ const App = () => {
   return (
     <React.Fragment>
       <h1 className="title">Previsão do tempo</h1>
-      <Card_input />
+      <Card_input></Card_input>
       <Card_capitais />
       <Input />
     </React.Fragment>

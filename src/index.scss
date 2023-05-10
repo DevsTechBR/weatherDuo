@@ -1,5 +1,6 @@
 @import './sass/variables';
 @import './sass/mixing';
+@import './components/Card_input/index.scss';
 
 
 * {
@@ -16,6 +17,4 @@ h1.title {
   margin-top: 3rem;
   font-size: $title-size;
   font-weight: 400;
-
-  
 }

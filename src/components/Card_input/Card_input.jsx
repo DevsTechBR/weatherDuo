@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
 const Card_input = () => {
   return (
-    <div>Card_input</div>
-  )
-}
+    <React.Fragment>
+      <div className="content">
+        <div className=""></div>
+      </div>
+    </React.Fragment>
+  );
+};
 
-export default Card_input
+export default Card_input;

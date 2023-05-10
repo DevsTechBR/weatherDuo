@@ -1,0 +1,15 @@
+div.content {
+  width: 100%;
+  background: salmon;
+  height: 50vh;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+div.content div.contentContainer {
+  background: white;
+  width: 40%;
+  height: 40vh;
+}/*# sourceMappingURL=index.css.map */

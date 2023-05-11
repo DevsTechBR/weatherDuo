@@ -8,9 +8,9 @@ const App = () => {
   return (
     <main>
       <h1 className="title">Previsão do tempo</h1>
-      <CardInput></CardInput>
-      <CardCapitais />
+      <CardInput />
       <Input />
+      <CardCapitais />
     </main>
   );
 };

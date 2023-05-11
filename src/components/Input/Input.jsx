@@ -1,10 +1,7 @@
-import React from 'react'
-import './index.scss'
+import "./index.scss";
 
 const Input = () => {
-  return (
-    <div>Input</div>
-  )
-}
+  return <div>Input</div>;
+};
 
-export default Input
+export default Input;

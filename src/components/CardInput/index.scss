@@ -8,10 +8,11 @@ div.content {
     height: 55vh;
     padding: 2rem;
     @include flexCenter(row, center, center);
+    // display: none;
     div.contentContainer {
         padding: 1rem;
         background: white;
-        width: 38%;
+        width: 40%;
         height: 55vh;
         border-radius: $border-radius;
         @include flexCenter(column, space-between, center);
@@ -37,7 +38,7 @@ div.content {
         div.contentContainer__boxClimate {
             width: 100%;
             @include flexCenter(row, center, center);
-            gap: 4rem;
+            gap: 5rem;
             h1.contentContainer__boxClimate--climate {
                 font-weight: 400;
                 font-size: $title-size;
@@ -97,6 +98,7 @@ div.content {
             width: 100%;
             padding: 1rem;
             @include flexCenter(column, center, flex-start);
+            
             h4 {
                 font-size: $text-size2;
                 font-weight: 400;

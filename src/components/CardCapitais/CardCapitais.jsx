@@ -11,7 +11,6 @@ const CardCapitais = () => {
   }, []);
 
   const handleData = async () => {
-    setDados([]);
     const capitais = [
       "Brasília",
       "Rio de Janeiro",
@@ -52,15 +51,16 @@ const CardCapitais = () => {
         })
       );
 
+      const formattedData = [];
+
       for (const city of data) {
         const cityData = await city.json();
         const forecastDay = cityData.forecast.forecastday[0];
-        setDados((prev) => [
-          ...prev,
-          { ...forecastDay, city: cityData.location.name },
-        ]);
+        formattedData.push({ ...forecastDay, city: cityData.location.name });
         console.log(cityData);
       }
+
+      setDados(formattedData);
     } catch (err) {
       console.log("error:", err);
     } finally {
@@ -95,4 +95,5 @@ const CardCapitais = () => {
     </div>
   );
 };
+
 export default CardCapitais;

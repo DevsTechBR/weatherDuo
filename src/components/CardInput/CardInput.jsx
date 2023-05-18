@@ -16,11 +16,11 @@ const CardInput = () => {
           </div>
           <div className="contentContainer__Container">
             <div className="contentContainer__Container--boxLeft">
-              <div>
+              <div className="contentContainer__Container--boxLeft__box">
                 <h3>17°C</h3>
-                <i className="fa-solid fa-arrow-down"></i>
+                <i className="fa-solid fa-arrow-down blue"></i>
                 <h3>25°C</h3>
-                <i className="fa-solid fa-arrow-up"></i>
+                <i className="fa-solid fa-arrow-up red"></i>
               </div>
               <h4>Vento: 9</h4>
             </div>
@@ -32,8 +32,8 @@ const CardInput = () => {
           <div className="contentContainer__footer">
             <h4>Quarta</h4>
             <div className="contentContainer__footer--box">
-              <h3>17</h3>
-              <h3>25</h3>
+              <h3 className="blue">17</h3>
+              <h3 className="red">25</h3>
             </div>
           </div>
         </div>

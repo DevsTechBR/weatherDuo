@@ -3,14 +3,118 @@
 
 
 div.content {
+    margin-top: 3rem;
     width: 100%;
-    background: salmon;
-    height: 50vh;
+    height: 55vh;
     padding: 2rem;
     @include flexCenter(row, center, center);
     div.contentContainer {
+        padding: 1rem;
         background: white;
-        width: 60%;
-        height: 40vh;
+        width: 38%;
+        height: 55vh;
+        border-radius: $border-radius;
+        @include flexCenter(column, space-between, center);
+        div.contentContainer__boxOut {
+            width: 100%;
+            @include flexCenter(row, space-between, center);
+            h5 {
+                font-size: $text-size1;
+                font-weight: 400;
+            }
+            i.fa-solid.fa-xmark {
+                @include flexCenter(row, center, center);
+                font-size: $subtitle-size;
+                cursor: pointer;
+                transition: .3s ease;
+                &:hover {
+                    transition: .3s ease;
+                    transform: scale(1.1);
+                    opacity: 70%;
+                }
+            }
+        }
+        div.contentContainer__boxClimate {
+            width: 100%;
+            @include flexCenter(row, center, center);
+            gap: 4rem;
+            h1.contentContainer__boxClimate--climate {
+                font-weight: 400;
+                font-size: $title-size;
+            }
+            h1.contentContainer__boxClimate--temperature {
+                font-size: $title-size;
+                font-weight: 900;
+            }
+        }
+        div.contentContainer__Container {
+            width: 100%;
+            height: 15vh;
+            @include flexCenter(row, space-between, center);
+            div.contentContainer__Container--boxLeft {
+                width: 50%;
+                height: 100%;
+                padding: 1rem;
+                @include flexCenter(column, center, flex-start);
+                gap: .5rem;
+                div.contentContainer__Container--boxLeft__box {
+                    width: 100%;
+                    @include flexCenter(row, flex-start, center);
+                    gap: 1rem;
+                    h3 {
+                        font-weight: 900;
+                        font-size: $text-size3;
+                    }
+                    i{
+                        font-size: $text-size3;
+                    }
+                    i.red {
+                        color: #FF543D;
+                    }
+                    i.blue {
+                        color: #7371FF;
+                    }
+                    
+                }
+                h4 {
+                    font-size: $text-size2;
+                    font-weight: 400;
+                }
+            }
+            div.contentContainer__Container--boxRight {
+                width: 47%;
+                height: 100%;
+                padding: 1rem;
+                @include flexCenter(column, center, flex-end);
+                gap: 1rem;
+                h4 {
+                    font-size: $text-size2;
+                    font-weight: 400;
+                }
+            }
+        }
+        div.contentContainer__footer {
+            width: 100%;
+            padding: 1rem;
+            @include flexCenter(column, center, flex-start);
+            h4 {
+                font-size: $text-size2;
+                font-weight: 400;
+            }
+            div.contentContainer__footer--box {
+                @include flexCenter(row, space-between, center);
+                width: 18%;
+                h3 {
+                    font-weight: 900;
+                    font-size: $text-size3;
+                }
+                .red {
+                    color: #FF543D;
+                }
+                .blue {
+                    color: #7371FF;
+                }
+            }
+        }
     }
 }

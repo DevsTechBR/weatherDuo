@@ -69,26 +69,50 @@ const CardCapitais = () => {
   };
 
   return (
-    <div>
+    <div className="divCapitais">
       {!loading ? (
-        <table>
-          <thead>
-            <tr>
-              <th>min</th>
-              <th>max</th>
-              <th>Capitais</th>
-            </tr>
-          </thead>
-          <tbody>
+        <div>
+          <h3>Capitais</h3>
+          <section className="capitals">
+            <ul className="capitals__list">
+              <div className="empty">
+                <div className="empty__fixed">
+                  <li className="min">Min</li>
+                </div>
+                <div className="empty__fixed">
+                  <li className="max">Max</li>
+                </div>
+              </div>
+            </ul>
+            <ul className="capitais__list">
+              <div className="empty">
+                <div className="empty__fixed">
+                  <li className="min">Min</li>
+                </div>
+                <div className="empty__fixed">
+                  <li className="max">Max</li>
+                </div>
+              </div>
+            </ul>
             {dados.map((item, index) => (
-              <tr key={index}>
-                <td>{item.day.mintemp_c}</td>
-                <td>{item.day.maxtemp_c}</td>
-                <td>{item.city}</td>
-              </tr>
+              <div key={index}>
+                <ul className="capitals__list">
+                  <div className="empty">
+                    <div className="empty__temp">
+                      <li className="min">{item.day.mintemp_c}°</li>
+                    </div>
+                    <div className="empty__temp">
+                      <li className="max">{item.day.maxtemp_c}°</li>
+                    </div>
+                  </div>
+                  <li className="name">
+                    <b>{item.city}</b>
+                  </li>
+                </ul>
+              </div>
             ))}
-          </tbody>
-        </table>
+          </section>
+        </div>
       ) : (
         <Loading />
       )}

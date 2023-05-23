@@ -72,15 +72,15 @@ const CardCapitais = () => {
     <div className="divCapitais">
       {!loading ? (
         <div>
-          <h3>Capitais</h3>
+          <h3 className="titleCapitais">Capitais</h3>
           <section className="capitals">
             <ul className="capitals__list">
               <div className="empty">
                 <div className="empty__fixed">
-                  <li className="min">Min</li>
+                  <li className="none">Min</li>
                 </div>
                 <div className="empty__fixed">
-                  <li className="max">Max</li>
+                  <li className="none">Max</li>
                 </div>
               </div>
             </ul>

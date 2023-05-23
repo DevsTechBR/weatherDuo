@@ -13,7 +13,7 @@ div.content {
         padding: 1rem;
         background: white;
         width: 50%;
-        height: 55vh;
+        height: 47vh;
         border-radius: $border-radius;
         @include flexCenter(column, space-between, center);
         div.contentContainer__boxOut {
@@ -43,10 +43,13 @@ div.content {
                 font-weight: 400;
                 font-size: $title-size;
                 word-break: break-all;
+                width: 70%;
             }
             h1.contentContainer__boxClimate--temperature {
                 font-size: $title-size;
+                width: 30%;
                 font-weight: 900;
+                @include flexCenter(row, flex-end, center);
             }
         }
         div.contentContainer__Container {
@@ -54,7 +57,7 @@ div.content {
             height: 15vh;
             @include flexCenter(row, space-between, center);
             div.contentContainer__Container--boxLeft {
-                width: 45%;
+                width: 60%;
                 height: 100%;
                 padding: 1rem;
                 @include flexCenter(column, center, flex-start);
@@ -65,7 +68,9 @@ div.content {
                     gap: 1rem;
                     h3 {
                         font-weight: 900;
+                        color: black;
                         font-size: $text-size3;
+                        margin: 0;
                     }
                     i{
                         font-size: $text-size3;

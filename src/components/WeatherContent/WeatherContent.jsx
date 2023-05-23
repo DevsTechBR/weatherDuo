@@ -55,7 +55,6 @@ export default function WeatherContent() {
 }
 
 /*
-
 {
     "location": {
         "name": "London",
@@ -1079,6 +1078,4 @@ export default function WeatherContent() {
         ]
     }
 }
-
-
 */

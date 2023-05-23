@@ -7,7 +7,7 @@ const CardInput = ({ onSearchCity, setOnSearchCity, city, weatherData }) => {
       <div className="content">
         <div className="contentContainer">
           <div className="contentContainer__boxOut">
-            <h5>{weatherData.location.name}</h5>
+            <h5>{`${weatherData.location.name} - ${weatherData.location.region} - ${weatherData.location.country}`}</h5>
             <i className="fa-solid fa-xmark"></i>
           </div>
           {weatherData && (

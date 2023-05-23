@@ -398,7 +398,7 @@ div.content {
         padding: 0;
         @include flexCenter(row, center, center);
         div.contentContainer {
-            padding: 1rem;
+            padding: .5rem;
             background: white;
             width: 100%;
             border-radius: $border-radius;
@@ -444,14 +444,14 @@ div.content {
                 height: 10vh;
                 @include flexCenter(row, space-between, center);
                 div.contentContainer__Container--boxLeft {
-                    width: 60%;
+                    width: 50%;
                     height: 100%;
                     @include flexCenter(column, center, flex-start);
                     gap: .5rem;
                     div.contentContainer__Container--boxLeft__box {
                         width: 100%;
                         @include flexCenter(row, flex-start, center);
-                        gap: 1rem;
+                        gap: .3rem;
                         h3 {
                             font-weight: 900;
                             color: black;
@@ -463,9 +463,11 @@ div.content {
                         }
                         i.red {
                             color: #FF543D;
+                            height: 100%;
                         }
                         i.blue {
                             color: #7371FF;
+                            height: 100%;
                         }
                         
                     }
@@ -475,7 +477,7 @@ div.content {
                     }
                 }
                 div.contentContainer__Container--boxRight {
-                    width: 40%;
+                    width: 45%;
                     height: 100%;
                     @include flexCenter(column, center, flex-end);
                     gap: 1rem;

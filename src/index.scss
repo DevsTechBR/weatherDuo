@@ -24,3 +24,13 @@ h1.title {
   font-size: $title-size;
   font-weight: 400;
 }
+
+@media (max-width: 425px) {
+  h1.title {
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: $title-size3;
+    font-weight: 400;
+  }
+}

@@ -8,10 +8,11 @@ div.content {
     height: 55vh;
     padding: 2rem;
     @include flexCenter(row, center, center);
+    // display: none;
     div.contentContainer {
         padding: 1rem;
         background: white;
-        width: 38%;
+        width: 50%;
         height: 55vh;
         border-radius: $border-radius;
         @include flexCenter(column, space-between, center);
@@ -37,10 +38,11 @@ div.content {
         div.contentContainer__boxClimate {
             width: 100%;
             @include flexCenter(row, center, center);
-            gap: 4rem;
+            gap: 3rem;
             h1.contentContainer__boxClimate--climate {
                 font-weight: 400;
                 font-size: $title-size;
+                word-break: break-all;
             }
             h1.contentContainer__boxClimate--temperature {
                 font-size: $title-size;
@@ -52,7 +54,7 @@ div.content {
             height: 15vh;
             @include flexCenter(row, space-between, center);
             div.contentContainer__Container--boxLeft {
-                width: 50%;
+                width: 45%;
                 height: 100%;
                 padding: 1rem;
                 @include flexCenter(column, center, flex-start);
@@ -82,7 +84,7 @@ div.content {
                 }
             }
             div.contentContainer__Container--boxRight {
-                width: 47%;
+                width: 40%;
                 height: 100%;
                 padding: 1rem;
                 @include flexCenter(column, center, flex-end);
@@ -90,29 +92,6 @@ div.content {
                 h4 {
                     font-size: $text-size2;
                     font-weight: 400;
-                }
-            }
-        }
-        div.contentContainer__footer {
-            width: 100%;
-            padding: 1rem;
-            @include flexCenter(column, center, flex-start);
-            h4 {
-                font-size: $text-size2;
-                font-weight: 400;
-            }
-            div.contentContainer__footer--box {
-                @include flexCenter(row, space-between, center);
-                width: 18%;
-                h3 {
-                    font-weight: 900;
-                    font-size: $text-size3;
-                }
-                .red {
-                    color: #FF543D;
-                }
-                .blue {
-                    color: #7371FF;
                 }
             }
         }

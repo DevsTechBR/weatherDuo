@@ -10,6 +10,7 @@
 
 body {
   background: $bg;
+  min-height: 100vh;
 }
 
 ul {
@@ -19,7 +20,7 @@ ul {
 h1.title {
   color: white;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 1rem;
   font-size: $title-size;
   font-weight: 400;
 }

@@ -16,7 +16,7 @@ const CardInput = ({ onSearchCity, setOnSearchCity, city, weatherData }) => {
                 {weatherData.current.condition.text}
               </h1>
               <h1 className="contentContainer__boxClimate--temperature">
-                {weatherData.current.temp_c}°C
+                {weatherData.current.temp_c.toFixed(0)}°C
               </h1>
             </div>
           )}

@@ -1,6 +1,11 @@
 import "./index.scss";
 
 export default function Input({ setCity, searchCity, city }) {
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      searchCity(true);
+    }
+  };
   return (
     <div className="inputSearch">
       <div className="inputSearch__boxOne">
@@ -9,6 +14,7 @@ export default function Input({ setCity, searchCity, city }) {
           onChange={(e) => {
             setCity(e.target.value);
           }}
+          onKeyDown={handleKeyPress}
           type="search"
           placeholder="Digite o nome da cidade..."
         />

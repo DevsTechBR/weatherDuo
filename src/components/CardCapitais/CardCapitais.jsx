@@ -44,7 +44,7 @@ const CardCapitais = () => {
       const data = await Promise.all(
         capitais.map((city) => {
           return fetch(
-            `http://api.weatherapi.com/v1/forecast.json?key=${
+            `https://api.weatherapi.com/v1/forecast.json?key=${
               import.meta.env.VITE_WEATHER_API
             }&q=${city}`,
             {

@@ -13,10 +13,9 @@ export default function WeatherContent() {
   useEffect(() => {
     async function getCity() {
       let dataResponse = await fetch(
-        `http://api.weatherapi.com/v1/forecast.json?key=e63768fb567b4a2b822125329231105&q=${city}&lang=pt`
+        `https://api.weatherapi.com/v1/forecast.json?key=e63768fb567b4a2b822125329231105&q=${city}&lang=pt`
       );
       let data = await dataResponse.json();
-      console.log(data);
       if (data.error) {
         toast.error("Cidade não encontrada!");
         return;

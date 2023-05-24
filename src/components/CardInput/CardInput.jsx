@@ -1,14 +1,25 @@
 import React from "react";
 import "./index.scss";
 
-const CardInput = ({ onSearchCity, setOnSearchCity, city, weatherData }) => {
+const CardInput = ({
+  onSearchCity,
+  setOnSearchCity,
+  city,
+  weatherData,
+  setWeatherData,
+}) => {
   return (
     <React.Fragment>
       <div className="content">
         <div className="contentContainer">
           <div className="contentContainer__boxOut">
             <h5>{`${weatherData.location.name} - ${weatherData.location.region} - ${weatherData.location.country}`}</h5>
-            <i className="fa-solid fa-xmark"></i>
+            <i
+              className="fa-solid fa-xmark"
+              onClick={() => {
+                setWeatherData(null);
+              }}
+            ></i>
           </div>
           {weatherData && (
             <div className="contentContainer__boxClimate">

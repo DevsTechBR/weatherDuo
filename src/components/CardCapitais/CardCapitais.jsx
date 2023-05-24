@@ -60,7 +60,6 @@ const CardCapitais = () => {
         const cityData = await city.json();
         const forecastDay = cityData.forecast.forecastday[0];
         formattedData.push({ ...forecastDay, city: cityData.location.name });
-        console.log(cityData);
       }
 
       setDados(formattedData);

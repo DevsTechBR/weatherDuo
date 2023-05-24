@@ -46,6 +46,7 @@ export default function WeatherContent() {
           setOnSearchCity={setOnSearchCity}
           city={city}
           weatherData={weatherData}
+          setWeatherData={setWeatherData}
         />
       )}
       <Input setCity={setCity} searchCity={searchCity} city={city} />

@@ -1,6 +1,12 @@
 # Weather Duo 💦
 
-### Projeto criado para o desenvolvimento de uma aplicação que faz requisições de clima tempo de cada cidade do mundo, prática de GitFlow, React.js e pré-processador SASS/SCSS.
+### Projeto
+<ul>
+  <a href="#ide-utilizada"><li>IDE</li></a>
+</ul>
+
+### Descrição
+Projeto criado para o desenvolvimento de uma aplicação que faz requisições de clima tempo de cada cidade do mundo, prática de GitFlow, React.js e pré-processador SASS/SCSS.
 
 ### Projeto realizado em dupla por: 
 - [@Lucas Maclean](https://www.github.com/osmaclean)
@@ -23,15 +29,14 @@
 
 <hr>
 
+# Estrutura do projeto
 ## Parte 1 - Estrutura 🏗 e Estilização 👨‍🎨
 
-### Estrutura via HTML5 e Estilização via pré-processador SASS.
-
-<hr>
+Estrutura via HTML5 e Estilização via pré-processador SASS.
 
 ## Parte 2 - Funcionalidade ⚙
 
-### Funcionalidade via React.js e Toastfy para validação do campo. Utilizando conceitos como React Hooks, Componentes, Renderização Condicional, Desestruturação, Arrow Function, Function Expression e Condicionais. 
+Funcionalidade via React.js e Toastfy para validação do campo. Utilizando conceitos como React Hooks, Componentes, Renderização Condicional, Desestruturação, Arrow Function, Function Expression e Condicionais. 
 
 ![weatherDuoNEW](https://github.com/DevsTechBR/weatherDuo/assets/115199808/5682c0a0-7edf-48db-aa29-1335b24f092f)
 
@@ -39,14 +44,12 @@
 
 ## Deployment ☁
 
-### Deploy realizado pela plataforma Vercel. Clique no botão abaixo e acesse o projeto.
+Deploy realizado pela plataforma Vercel. Clique no botão abaixo e acesse o projeto.
 [![portfolio](https://img.shields.io/badge/-CLIQUE%20AQUI-yellowgreen)](https://weather-duo.vercel.app)
 
-<hr>
-
 ## Configuração de Desenvolvimento
+Clone esse repositório em um diretório na sua máquina local, abra o diretório utilizando a sua IDE de preferência. No terminal da sua IDE, rode esses seguintes comandos:
 
-### Clone esse repositório em um diretório na sua máquina local, abra o diretório utilizando a sua IDE de preferência. No terminal da sua IDE, rode esses seguintes comandos:
 <br>
 
 ```sh
@@ -55,9 +58,6 @@ npm run dev
 ```
 
 ### OBS: Requer o Node.js instalado em sua máquina.
-<hr>
-
-
 
 ## IDE Utilizada
 

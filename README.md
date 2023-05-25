@@ -1,6 +1,6 @@
 # Weather Duo 💦
 
-### Projeto criado para o desenvolvimento de uma aplicação que faz requisições de clima tempo de cada cidade do mundo.
+### Projeto criado para o desenvolvimento de uma aplicação que faz requisições de clima tempo de cada cidade do mundo, prática de GitFlow, React.js e pré-processador SASS/SCSS.
 
 ### Projeto realizado em dupla por: 
 - [@Lucas Maclean](https://www.github.com/osmaclean)
